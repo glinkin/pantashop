@@ -69,7 +69,6 @@ gem 'capistrano', '~> 3.6', '>= 3.6.1'
 gem 'capistrano-bundler', '~> 1.2'
 gem 'capistrano-rails', '~> 1.1', '>= 1.1.8'
 gem 'colorize', '0.7.4'
-gem 'sshkit', '~> 1.11', '>= 1.11.3'
 gem 'capistrano-rvm', github: "capistrano/rvm"
 
 
