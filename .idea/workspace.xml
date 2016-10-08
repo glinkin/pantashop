@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c08a5a0-cc17-4460-8fe5-8a0bbcb90558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pantashop.iml" afterPath="$PROJECT_DIR$/.idea/pantashop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/cache/ruby/2.3.0/bundler/gems/rvm-9cfef39cf002" afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.3.0/bundler/gems/rvm-9cfef39cf002" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
     </list>
@@ -37,8 +36,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -57,8 +56,8 @@
       <file leaf-file-name="capistrano.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/capistrano.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17989">
-              <caret line="3323" column="5" selection-start-line="2146" selection-start-column="5" selection-end-line="2146" selection-end-column="19" />
+            <state relative-caret-position="31864">
+              <caret line="4248" column="5" selection-start-line="2146" selection-start-column="5" selection-end-line="2146" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -501,12 +500,12 @@
       <option name="presentableId" value="Default" />
       <updated>1475810811012</updated>
       <workItem from="1475810812848" duration="50828000" />
-      <workItem from="1475945920035" duration="11185000" />
+      <workItem from="1475945920035" duration="11660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62013000" />
+    <option name="totallyTimeSpent" value="62488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,16 +834,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/capistrano.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17989">
-          <caret line="3323" column="5" selection-start-line="2146" selection-start-column="5" selection-end-line="2146" selection-end-column="19" />
+        <state relative-caret-position="31864">
+          <caret line="4248" column="5" selection-start-line="2146" selection-start-column="5" selection-end-line="2146" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
