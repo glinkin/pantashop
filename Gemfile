@@ -5,7 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
 
-gem 'sqlite3'
+
+
 gem 'rails_serve_static_assets'
 
 # Use Puma as the app server
@@ -37,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '2.13.1'
 end
@@ -72,5 +74,7 @@ gem 'colorize', '0.7.4'
 gem 'sshkit', '~> 1.7', '>= 1.7.1'
 gem 'capistrano-rvm', github: "capistrano/rvm"
 
-
+group :production do
+  gem 'pg'
+end
 
