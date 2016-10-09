@@ -1,3 +1,4 @@
+
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
@@ -24,6 +25,7 @@ require 'capistrano/deploy'
 # require 'capistrano/rails/migrations'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
+
 
 
 require 'capistrano/rvm'
