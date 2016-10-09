@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:glinkin/pantashop.git'
 
 set :deploy_to, '/home/deploy/pantashop'
 
-set :linked_files, %w{config/database.yml, secrets.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 
