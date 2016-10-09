@@ -1,0 +1,13 @@
+<div class="container content">
+<h1>Static#payment</h1>
+<p>Find me in app/views/static/payment.html.erb</p>
+  set -e
+
+  echo 'gem: --no-document' > /usr/local/etc/gemrc
+  mkdir -p /src
+  git clone https://github.com/sstephenson/ruby-build.git /src/ruby-build
+  /src/ruby-build/install.sh
+  rm -rf /src/ruby-build
+  RUBY_CONFIGURE_OPTS=--disable-install-doc ruby-build 2.3.1 /usr/local
+</div>
+

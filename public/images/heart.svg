@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="136px" height="137px" viewBox="0 0 136 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F5515F" offset="0%"></stop>
+            <stop stop-color="#9F031B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-/-Desktop" transform="translate(-328.000000, -1487.000000)">
+            <g id="Group-16" transform="translate(330.000000, 1489.000000)">
+                <ellipse id="Oval-Copy-6" stroke="#7ED321" stroke-width="4" cx="65.8027344" cy="66.1166992" rx="65.8027344" ry="66.1166992"></ellipse>
+                <path d="M101.970133,61.1589365 C101.242956,75.8968798 90.8356785,83.3018503 77.9372782,94.2743103 C71.1406888,100.055731 60.9674041,100.055731 54.1456155,94.3067093 C41.3336125,83.507044 30.5663462,75.954478 30.0155632,60.7053506 C29.3243847,41.5431444 51.8200875,33.6989875 64.5996915,49.333303 C65.2980699,50.1900765 66.6948266,50.172077 67.389605,49.3153036 C80.1260103,33.6269897 102.938503,41.5755434 101.970133,61.1589365" id="love-[#1488]" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
