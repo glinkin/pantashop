@@ -1,0 +1,36 @@
+<!--Блок модальное окна Заказать звонок-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Оформление заказа</h4>
+      </div>
+      <div class="modal-body">
+
+        <%= form_for(@phone_order) do |f| %>
+
+            <div class="field  input-group-lg">
+              <%= f.label 'Имя' %>
+              <%= f.text_field :name, :class => 'form-control', :placeholder => 'Иван Иванов' %>
+            </div>
+
+            <div class="field  input-group-lg">
+              <%= f.label 'Ваш телефон' %>
+              <%= f.telephone_field :phone, :class => 'form-control', :placeholder => '+7 (9--) --- -- --' %>
+            </div>
+
+            <div class="actions">
+
+            </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <%= f.submit 'Оформить заказ', :class => 'btn btn-lg btn-success' %>
+      </div>
+        <% end %>
+    </div>
+  </div>
+</div>
+<!--Конец блока-->

@@ -1,0 +1,1 @@
+json.partial! "phone_orders/phone_order", phone_order: @phone_order

@@ -1,0 +1,31 @@
+<div class="container content simple-page">
+<p id="notice"><%= notice %></p>
+
+<h1>Phone Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @phone_orders.each do |phone_order| %>
+      <tr>
+        <td><%= phone_order.name %></td>
+        <td><%= phone_order.phone %></td>
+        <td><%= link_to 'Show', phone_order %></td>
+        <td><%= link_to 'Edit', edit_phone_order_path(phone_order) %></td>
+        <td><%= link_to 'Destroy', phone_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Phone Order', new_phone_order_path %>
+</div>
