@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'order/new'
+
   root  'static#index'
   match '/delivery',    to: 'static#delivery',      via: 'get'
   match '/payment',     to: 'static#payment',       via: 'get'
