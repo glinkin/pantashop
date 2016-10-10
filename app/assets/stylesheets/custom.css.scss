@@ -208,6 +208,11 @@ body {
   outline: none;
   margin-right: 10px;
 }
+
+.main-screen {
+
+  z-index: 10;
+}
 .plus {
   float: left;
   /* Rectangle 20: */
@@ -250,7 +255,7 @@ body {
   white-space: nowrap;
 }
 .main-tabs {
-  margin-top: 29px;
+  margin-top: 28px;
   margin-left: 60px;
 }
 .main-tabs .nav-tabs {
@@ -531,6 +536,7 @@ body {
   .main-screen {
     background-size: 980px;
   }
+
   .bp {
     padding-bottom: 23px;
   }
