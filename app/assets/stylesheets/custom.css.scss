@@ -208,7 +208,18 @@ body {
   outline: none;
   margin-right: 10px;
 }
-
+.list-content {
+  font-family: Roboto-Regular;
+  font-size: 17px;
+  color: #4A4A4A;
+  letter-spacing: 0px;
+  line-height: 27px;
+  padding-left: 25px;
+  li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+}
 .main-screen {
 
   z-index: 10;
