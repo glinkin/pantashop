@@ -8,7 +8,7 @@
     padding-top: 20px;
   }
 }
-.delivery, .payment {
+.delivery, .payment, .about {
   p {
     font-family: Roboto-Regular;
     font-size: 17px;
@@ -26,5 +26,19 @@
   margin-top: 50px;
   img {
     padding-left: 30px;
+  }
+}
+.about {
+  table {
+    width: 100%;
+    td:first-of-type {
+      font-size: 17px;
+    }
+    tr:nth-child(odd) {
+      background: #EEE;
+    }
+    td {
+      padding: 15px;
+    }
   }
 }
