@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+//= require fancybox
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
@@ -19,6 +20,13 @@ $('body').on('click', function(){
     alert('Вы нажали на элемент "foo"');
 });
 
+
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        openEffect	: 'none',
+        closeEffect	: 'none'
+    });
+});
 //Фиксирование меню-табов (Описание, Фото, Видео,
 //TODO Переписать на универсальный модуль
 
@@ -28,10 +36,10 @@ $(window).scroll(function(event){
         $(".main-screen").css("top", "-550px");
         $(".main-screen").css("position", "fixed");
         $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
-        $(".deer").css("margin-top", "650px");
+        $(".tab-content").css("margin-top", "650px");
 
     } else {
-        $(".deer").css("margin-top", "0px");
+        $(".tab-content").css("margin-top", "0px");
         $(".main-screen").css("top", "0px");
         $(".main-screen").css("position", "relative");
         $(".main-screen").css("box-shadow", "none");

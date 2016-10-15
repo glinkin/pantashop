@@ -30,8 +30,8 @@ module Rails
         class_option :database,           type: :string, aliases: '-d', default: 'sqlite3',
                                           desc: "Preconfigure for selected database (options: #{DATABASES.join('/')})"
 
-        class_option :javascript,         type: :string, aliases: '-j', default: 'jquery',
-                                          desc: 'Preconfigure for selected JavaScript library'
+        class_option :javascripts, type: :string, aliases: '-j', default: 'jquery',
+                     desc: 'Preconfigure for selected JavaScript library'
 
         class_option :skip_gemfile,       type: :boolean, default: false,
                                           desc: "Don't create a Gemfile"
@@ -320,8 +320,8 @@ module Rails
           []
         else
           gems = [coffee_gemfile_entry, javascript_runtime_gemfile_entry]
-          gems << GemfileEntry.version("#{options[:javascript]}-rails", nil,
-                                       "Use #{options[:javascript]} as the JavaScript library")
+          gems << GemfileEntry.version("#{options[:javascripts]}-rails", nil,
+                                       "Use #{options[:javascripts]} as the JavaScript library")
 
           unless options[:skip_turbolinks]
             gems << GemfileEntry.version("turbolinks", "~> 5",

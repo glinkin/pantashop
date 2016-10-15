@@ -9,7 +9,7 @@ stylesheet '_bootstrap-variables.sass', :to => '_bootstrap-variables.sass'
 # Copy JS and fonts
 manifest = Pathname.new(File.dirname(__FILE__))
 assets   = File.expand_path('../../assets', manifest)
-{:javascript => 'javascripts',
+{:javascripts => 'javascripts',
  :font       => 'fonts'
 }.each do |method, dir|
   root = Pathname.new(assets).join(dir)

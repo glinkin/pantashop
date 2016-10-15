@@ -220,7 +220,7 @@ Extend your environment context with a custom method.
 
     # Expand logical javascript asset path.
     def javascript_path(path)
-      asset_path(path, type: :javascript)
+      asset_path(path, type: :javascripts)
     end
 
     # Expand logical stylesheet asset path.

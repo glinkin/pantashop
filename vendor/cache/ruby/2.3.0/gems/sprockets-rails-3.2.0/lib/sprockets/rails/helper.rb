@@ -138,7 +138,7 @@ module Sprockets
 
         if options["debug"] != false && request_debug_assets?
           sources.map { |source|
-            if asset = lookup_debug_asset(source, type: :javascript)
+            if asset = lookup_debug_asset(source, type: :javascripts)
               if asset.respond_to?(:to_a)
                 asset.to_a.map do |a|
                   super(path_to_javascript(a.logical_path, debug: true), options)
@@ -152,7 +152,7 @@ module Sprockets
           }.flatten.uniq.join("\n").html_safe
         else
           sources.map { |source|
-            options = options.merge('integrity' => asset_integrity(source, type: :javascript)) if integrity
+            options = options.merge('integrity' => asset_integrity(source, type: :javascripts)) if integrity
             super source, options
           }.join("\n").html_safe
         end

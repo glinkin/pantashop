@@ -107,7 +107,7 @@ module Selenium
         elsif options[:wait_for] == :not_visible
             wait_for_not_visible options[:element], options
 	      elsif options[:wait_for] == :condition
-	          wait_for_condition options[:javascript], options[:timeout_in_seconds]
+	          wait_for_condition options[:javascripts], options[:timeout_in_seconds]
         end
       end
 

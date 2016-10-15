@@ -173,8 +173,8 @@ module ActionView
       alias_method :url_to_asset, :asset_url # aliased to avoid conflicts with an asset_url named route
 
       ASSET_EXTENSIONS = {
-        javascript: '.js',
-        stylesheet: '.css'
+          javascripts: '.js',
+          stylesheet: '.css'
       }
 
       # Compute extname to append to asset path. Returns nil if
@@ -187,12 +187,12 @@ module ActionView
 
       # Maps asset types to public directory.
       ASSET_PUBLIC_DIRECTORIES = {
-        audio:      '/audios',
-        font:       '/fonts',
-        image:      '/images',
-        javascript: '/javascripts',
-        stylesheet: '/stylesheets',
-        video:      '/videos'
+          audio:      '/audios',
+          font:       '/fonts',
+          image:      '/images',
+          javascripts: '/javascripts',
+          stylesheet: '/stylesheets',
+          video:      '/videos'
       }
 
       # Computes asset path to public directory. Plugins and
@@ -251,7 +251,7 @@ module ActionView
       #   javascript_path "http://www.example.com/js/xmlhr"    # => http://www.example.com/js/xmlhr
       #   javascript_path "http://www.example.com/js/xmlhr.js" # => http://www.example.com/js/xmlhr.js
       def javascript_path(source, options = {})
-        path_to_asset(source, {type: :javascript}.merge!(options))
+        path_to_asset(source, {type: :javascripts}.merge!(options))
       end
       alias_method :path_to_javascript, :javascript_path # aliased to avoid conflicts with a javascript_path named route
 
@@ -263,7 +263,7 @@ module ActionView
       #   javascript_url "js/xmlhr.js", host: "http://stage.example.com" # => http://stage.example.com/assets/dir/xmlhr.js
       #
       def javascript_url(source, options = {})
-        url_to_asset(source, {type: :javascript}.merge!(options))
+        url_to_asset(source, {type: :javascripts}.merge!(options))
       end
       alias_method :url_to_javascript, :javascript_url # aliased to avoid conflicts with a javascript_url named route
 

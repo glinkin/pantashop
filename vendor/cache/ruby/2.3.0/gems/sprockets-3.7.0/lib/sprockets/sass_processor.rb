@@ -215,7 +215,7 @@ module Sprockets
       #
       # Returns a Sass::Script::String.
       def javascript_path(path)
-        asset_path(path, type: :javascript)
+        asset_path(path, type: :javascripts)
       end
 
       # Public: Generate a javascript url() link.
@@ -224,7 +224,7 @@ module Sprockets
       #
       # Returns a Sass::Script::String.
       def javascript_url(path)
-        asset_url(path, type: :javascript)
+        asset_url(path, type: :javascripts)
       end
 
       # Public: Generate url for stylesheet path.
