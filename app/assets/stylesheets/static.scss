@@ -8,7 +8,7 @@
     padding-top: 20px;
   }
 }
-.delivery, .payment, .about {
+.delivery, .payment, .about, #review {
   p {
     font-family: Roboto-Regular;
     font-size: 17px;
@@ -45,9 +45,26 @@
 .video {
   text-align: center;
 }
-#photo {
+#photo, #certificate {
   text-align: center;
   img {
     margin: 10px;
   }
+}
+
+.ava {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  background: #EEEEEE;
+  background-size: cover;
+}
+#review {
+ .content {
+   padding-top: 80px;
+   p {
+     margin-bottom: 50px;
+   }
+ }
+
 }

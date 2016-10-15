@@ -39,13 +39,24 @@ $(document).ready(function() {
             $(".main-screen").css("box-shadow", "none");
         }
     });
-    $(".nav-tabs li").on('click',function(){
+    $(document).on('click',".nav-tabs li",function(){
         var st = $(window).scrollTop();
         if (st >= 550){
             $(window).scrollTop(549);
             console.log('ok');
         }
+    });
+    $(document).on('click',".minus",function(){
+        if($('.count').val()>1){
+            $('.count').val($('.count').val()-1);
+        }
 
+        console.log('minus');
+    });
+    $(document).on('click',".plus",function(){
+        var count = parseInt($('.count').val())+1;
+        $('.count').val(count);
+        console.log('plus');
     });
 });
 //Фиксирование меню-табов (Описание, Фото, Видео,
