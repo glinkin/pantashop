@@ -278,7 +278,7 @@ body {
 }
 .main-tabs .nav-tabs > li > a {
   height: 48px;
-  border: 0;
+  border: 0 !important;
   padding: 10px 25px;
   font-family: Roboto-Regular;
   color: #FFFFFF;
@@ -291,6 +291,7 @@ body {
   color: #4A4A4A;
   letter-spacing: 0px;
   text-decoration: none;
+  border: 0;
 }
 .main-tabs .nav-tabs > li > a:hover {
   border: 0;

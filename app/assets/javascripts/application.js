@@ -16,9 +16,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$('body').on('click', function(){
-    alert('Вы нажали на элемент "foo"');
-});
 
 
 $(document).ready(function() {
@@ -26,23 +23,32 @@ $(document).ready(function() {
         openEffect	: 'none',
         closeEffect	: 'none'
     });
+
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st >= 550){
+            $(".main-screen").css("top", "-550px");
+            $(".main-screen").css("position", "fixed");
+            $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
+            $(".tab-content").css("margin-top", "650px");
+
+        } else {
+            $(".tab-content").css("margin-top", "0px");
+            $(".main-screen").css("top", "0px");
+            $(".main-screen").css("position", "relative");
+            $(".main-screen").css("box-shadow", "none");
+        }
+    });
+    $(".nav-tabs li").on('click',function(){
+        var st = $(window).scrollTop();
+        if (st >= 550){
+            $(window).scrollTop(549);
+            console.log('ok');
+        }
+
+    });
 });
 //Фиксирование меню-табов (Описание, Фото, Видео,
 //TODO Переписать на универсальный модуль
 
-$(window).scroll(function(event){
-    var st = $(this).scrollTop();
-    if (st >= 550){
-        $(".main-screen").css("top", "-550px");
-        $(".main-screen").css("position", "fixed");
-        $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
-        $(".tab-content").css("margin-top", "650px");
-
-    } else {
-        $(".tab-content").css("margin-top", "0px");
-        $(".main-screen").css("top", "0px");
-        $(".main-screen").css("position", "relative");
-        $(".main-screen").css("box-shadow", "none");
-    }
-});
 
