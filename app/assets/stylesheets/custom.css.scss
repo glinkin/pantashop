@@ -1,7 +1,11 @@
 @import "bootstrap";
+@import 'animate';
 
 body {
   background: #EEEEEE;
+}
+.vscroll {
+  opacity:0;
 }
 .container {
   max-width: 970px;
@@ -59,6 +63,7 @@ body {
   display: inline-block;
   margin-right: 45px;
   outline: none !important;
+
 }
 .callback:before {
   content: url("../images/call.svg");
@@ -67,6 +72,9 @@ body {
   height: 0;
   margin-right: 30px;
   vertical-align: sub;
+  &:hover {
+    @extend .tada, .animated;
+  }
 }
 .best-dealer {
   /* Официальнный предста: */
@@ -283,6 +291,10 @@ body {
   font-family: Roboto-Regular;
   color: #FFFFFF;
   text-decoration: underline;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 .main-tabs .nav-tabs > .active > a {
   /* Описание: */

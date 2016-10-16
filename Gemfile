@@ -22,6 +22,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Use Fancybox-rails
 gem 'fancybox-rails'
 
+# Use Animate-css
+gem 'animate.css-rails', '~> 3.2.0'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

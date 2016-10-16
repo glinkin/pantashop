@@ -38,6 +38,10 @@ $(document).ready(function() {
             $(".main-screen").css("position", "relative");
             $(".main-screen").css("box-shadow", "none");
         }
+        var FadeElement = inWindow('.vscroll');
+        console.log(FadeElement.html());
+        FadeElement.show();
+        FadeElement.addClass('animated fadeIn');
     });
     $(document).on('click',".nav-tabs li",function(){
         var st = $(window).scrollTop();
@@ -58,6 +62,21 @@ $(document).ready(function() {
         $('.count').val(count);
         console.log('plus');
     });
+
+    function inWindow(s){
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var currentEls = $(s);
+        var result = [];
+        currentEls.each(function(){
+            var el = $(this);
+            var offset = el.offset();
+            if(scrollTop <= offset.top && (50 + offset.top) < (scrollTop + windowHeight))
+                result.push(this);
+        });
+        return $(result);
+    }
+
 });
 //Фиксирование меню-табов (Описание, Фото, Видео,
 //TODO Переписать на универсальный модуль
