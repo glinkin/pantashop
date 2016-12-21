@@ -32,6 +32,7 @@ $(document).ready(function() {
             $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
             $(".tab-content").css("margin-top", "650px");
 
+
         } else {
             $(".tab-content").css("margin-top", "0px");
             $(".main-screen").css("top", "0px");

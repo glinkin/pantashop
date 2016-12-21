@@ -31,6 +31,9 @@ body {
 }
 .navbar-brand {
   padding: 5px 15px;
+  &:hover {
+    @extend .pulse, .animated;
+  }
 }
 .navbar-brand >img {
   display: inline;
