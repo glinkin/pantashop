@@ -81,7 +81,8 @@ body {
 }
 .best-dealer {
   /* Официальнный предста: */
-  font-family: Roboto-Light;
+  font-family: Roboto;
+  font-weight: 100;
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 0px;
@@ -174,21 +175,23 @@ body {
 .main-description {
   /* Пробуждает и включае: */
   /* Пробуждает и включае: */
-  font-family: Roboto-Thin;
+  font-family: Roboto;
+  font-weight: 100;
   font-size: 18px;
   color: #EEEEEE;
   letter-spacing: 0px;
   line-height: 27px;
 }
 .main-price {
-  font-family: Roboto-Thin;
+  font-family: Roboto;
+  font-weight: 100;
   font-size: 48px;
   color: #FFFFFF;
   letter-spacing: 0px;
 }
 .sub-basargino {
   /* Басаргино: */
-  font-family: Roboto-Regular;
+  font-family: Roboto;
   font-size: 14px;
   color: #EEEEEE;
   margin-left: 297px;
@@ -251,7 +254,7 @@ body {
   background-image: linear-gradient(-180deg, #B4EC51 0%, #429321 100%);
   border-radius: 4px;
   /* Купить: */
-  font-family: Roboto-Regular;
+  font-family: Roboto;
   font-size: 18px;
   color: #000000;
   width: 149px;
@@ -262,7 +265,8 @@ body {
 }
 .main-warning {
   /* * Не является лекарс: */
-  font-family: Roboto-Thin;
+  font-family: Roboto;
+  font-weight: 100;
   font-size: 14px;
   color: #B8E986;
   letter-spacing: 0px;
@@ -270,7 +274,8 @@ body {
 }
 .main-warning-2 {
   /* * Не является лекарс: */
-  font-family: Roboto-Light;
+  font-family: Roboto;
+  font-weight: 100;
   font-size: 12px;
   color: #B8E986;
   letter-spacing: 0px;
@@ -663,10 +668,43 @@ body {
   .main-screen h1 {
     font-size: 34px;
   }
+  .main-warning-2 {
+    white-space: normal;
+  }
+  .main-title h1 {
+    font-size: 34px;
+  }
+  .buy {
+    margin-top: 25px;
+  }
+  .banner-text {
+    background-size: cover !important;
+    height: 420px;
+    background-size: 100%;
+    padding-left: 40px;
+    padding-top: 43px;
+  }
   .best-dealer {
     margin: 0;
     margin-top: 20px;
+    .col-lg-6
+    {
+      .star {
+        img {
+          position: relative;
+
+        }
+      }
+      img {
+        position: absolute;
+        right: 0;
+      }
+    }
+    .sport {
+      margin-top: 145px;
+    }
   }
+
   .bp{
     width: 100%;
   }
@@ -676,13 +714,28 @@ body {
   .content .col-lg-4 {
     width: auto;
   }
+  .sub-basargino {
+    width: 290px;
+    margin: 0;
+    text-align: right;
+  }
+  .quality {
+    padding-top: 0px;
+    font-family: Roboto;
+    font-weight: 500;
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+  }
   .utp-text{
     text-align: center;
     width: 100%;
   }
   .container {
-    padding-right: 20px;
+   // padding-right: 20px;
   }
+
   .sport {
     background: #D0021B;
     border-radius: 4px;
