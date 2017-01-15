@@ -23,27 +23,30 @@ $(document).ready(function() {
         openEffect	: 'none',
         closeEffect	: 'none'
     });
+    alert ($(window).height());
 
-    $(window).scroll(function(event){
-        var st = $(this).scrollTop();
-        if (st >= 550){
-            $(".main-screen").css("top", "-550px");
-            $(".main-screen").css("position", "fixed");
-            $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
-            $(".tab-content").css("margin-top", "650px");
+         $(window).scroll(function (event) {
+             if($(window).width() > 799 ) {
+                 var st = $(this).scrollTop();
+                 if (st >= 550) {
+                     $(".main-screen").css("top", "-550px");
+                     $(".main-screen").css("position", "fixed");
+                     $(".main-screen").css("box-shadow", "0px 2px 4px 0px rgba(0, 0, 0, 0.5)");
+                     $(".tab-content").css("margin-top", "650px");
 
+                 } else {
+                     $(".tab-content").css("margin-top", "0px");
+                     $(".main-screen").css("top", "0px");
+                     $(".main-screen").css("position", "relative");
+                     $(".main-screen").css("box-shadow", "none");
+                 }
+                 var FadeElement = inWindow('.vscroll');
+                 console.log(FadeElement.html());
+                 FadeElement.show();
+                 FadeElement.addClass('animated fadeIn');
+             }
+         });
 
-        } else {
-            $(".tab-content").css("margin-top", "0px");
-            $(".main-screen").css("top", "0px");
-            $(".main-screen").css("position", "relative");
-            $(".main-screen").css("box-shadow", "none");
-        }
-        var FadeElement = inWindow('.vscroll');
-        console.log(FadeElement.html());
-        FadeElement.show();
-        FadeElement.addClass('animated fadeIn');
-    });
     $(document).on('click',".nav-tabs li",function(){
         var st = $(window).scrollTop();
         if (st >= 550){
