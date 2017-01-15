@@ -23,7 +23,6 @@ $(document).ready(function() {
         openEffect	: 'none',
         closeEffect	: 'none'
     });
-    alert ($(window).height());
 
          $(window).scroll(function (event) {
              if($(window).width() > 799 ) {
