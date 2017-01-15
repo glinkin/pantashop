@@ -39,11 +39,11 @@ $(document).ready(function() {
                      $(".main-screen").css("position", "relative");
                      $(".main-screen").css("box-shadow", "none");
                  }
-                 var FadeElement = inWindow('.vscroll');
-                 console.log(FadeElement.html());
-                 FadeElement.show();
-                 FadeElement.addClass('animated fadeIn');
              }
+             var FadeElement = inWindow('.vscroll');
+             console.log(FadeElement.html());
+             FadeElement.show();
+             FadeElement.addClass('animated fadeIn');
          });
 
     $(document).on('click',".nav-tabs li",function(){
