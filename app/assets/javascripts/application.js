@@ -64,7 +64,7 @@ $(document).ready(function() {
         }
     });
     $(document).on('click',".panel-heading",function(){
-            $(window).scrollTop($('.panel-default').offset().top-60);
+            $(window).scrollTop($('.panel-default').offset().top-50);
         if($(this).find('img').attr("src") == '/images/plus.svg'){
             $('.panel-title').find('img').attr("src", "/images/plus.svg");
             $('.panel-title').find('img').removeClass("minus-panel");

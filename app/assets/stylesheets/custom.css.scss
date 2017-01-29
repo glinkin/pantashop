@@ -373,7 +373,8 @@ body {
   background: #7ED321;
   border-radius: 4px;
   /* Оформить заказ: */
-  font-family: Roboto-Medium;
+  font-family: Roboto;
+  font-weight: 400;
   font-size: 18px;
   color: #294A03;
   letter-spacing: 0px;
@@ -669,6 +670,25 @@ body {
   .main-screen {
     height: 1190px;
     background-size: cover;
+    .container-fluid {
+      padding: 0;
+    }
+
+  }
+  .feedback-form {
+    height: 480px;
+  }
+  .footer {
+    text-align: center;
+    padding-top: 20px !important;
+  }
+  .bp {
+    width: 0 !important;
+    padding-bottom: 0px;
+  }
+  .panel-group {
+    margin-bottom: 0;
+    text-align: center;
   }
   .panel-group .panel + .panel {
     border-top: 0;
@@ -679,10 +699,29 @@ body {
     font-size: 17px;
     line-height: 27px;
   }
+  .order-now {
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .social {
+    margin-bottom: 40px;
+    margin-top: 0 !important;
+  }
+  .change-pay {
+    margin-top: 0;
+  }
+  .partners {
+    padding-left: 0;
+  }
   .utp-text {
     font-size: 17px;
     line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    height: 0;
   }
+
   .panel-heading {
     padding: 15px;
    a {
@@ -715,8 +754,38 @@ body {
   .main-title h1 {
     font-size: 34px;
   }
+  .callback {
+    margin-right: 0;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #329908;
+    text-align: center;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+    border: #FFF;
+  }
   .buy {
     margin-top: 25px;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #207700;
+  }
+  .feedback-form input {
+    width: 100%;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #8BC34A;
+    background: #8BC34A;
+  }
+  .bottel {
+    margin: 0 auto;
+  }
+  .adv {
+    padding: 0 !important;
+  }
+  .plus {
+    margin-right: 0px;
   }
   .banner-text {
     background-size: cover !important;
@@ -728,6 +797,7 @@ body {
   .best-dealer {
     margin: 0;
     margin-top: 20px;
+    text-align: center;
     .col-lg-6
     {
       .star {
@@ -742,10 +812,20 @@ body {
       }
     }
     .sport {
+      margin: 0 auto;
       margin-top: 145px;
+
     }
   }
-
+  .counter {
+    text-align: center;
+    margin: 0 auto;
+    width: 162px;
+    float: none;
+  }
+  .main-description{
+    margin-top: 15px;
+  }
   .bp{
     width: 100%;
   }
@@ -761,6 +841,7 @@ body {
     text-align: right;
   }
   .quality {
+    text-align: left;
     padding-top: 0px;
     font-family: Roboto;
     font-weight: 500;
@@ -768,6 +849,7 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0px;
+
   }
   .utp-text{
     text-align: center;
