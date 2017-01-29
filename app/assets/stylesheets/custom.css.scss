@@ -690,7 +690,11 @@ body {
      h4 {
        font-size: 18px;
        font-weight: 400;
+       .minus-panel {
+         padding-top: 7px;
+       }
        img {
+
          right: 20px;
          position: absolute;
        }
