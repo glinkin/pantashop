@@ -26,6 +26,10 @@ $(document).ready(function() {
 
          $(window).scroll(function (event) {
              if($(window).width() > 799 ) {
+                 $('.main-tabs').show();
+                 $('.tab-content').show();
+                 $('.panel-group').hide();
+
                  var st = $(this).scrollTop();
                  if (st >= 550) {
                      $(".main-screen").css("top", "-550px");
@@ -40,6 +44,12 @@ $(document).ready(function() {
                      $(".main-screen").css("box-shadow", "none");
                  }
              }
+             else {
+                 $('.panel-group').show();
+                 $('.main-tabs').hide();
+                 $('.tab-content').hide();
+
+             }
              var FadeElement = inWindow('.vscroll');
              console.log(FadeElement.html());
              FadeElement.show();
@@ -52,6 +62,11 @@ $(document).ready(function() {
             $(window).scrollTop(549);
             console.log('ok');
         }
+    });
+    $(document).on('click',".panel-heading",function(){
+            $(window).scrollTop($('.panel-default').offset().top-60);
+            //$(this).find('h4').trigger('click');
+
     });
     $(document).on('click',".minus",function(){
         if($('.count').val()>1){

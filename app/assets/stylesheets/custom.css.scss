@@ -667,8 +667,40 @@ body {
 /*Screen xs Mobile*/
 @media (max-width: 768px){
   .main-screen {
-    height: 1320px;
+    height: 1190px;
     background-size: cover;
+  }
+  .panel-group .panel + .panel {
+    border-top: 0;
+    background: #FFF;
+    margin: 0;
+  }
+  .panel-body {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .utp-text {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .panel-heading {
+    padding: 15px;
+   a {
+     color: #000;
+     h4 {
+       font-size: 18px;
+       font-weight: 400;
+       img {
+         right: 20px;
+         position: absolute;
+       }
+     }
+
+     text-decoration: none;
+     &:hover {
+       text-decoration: none;
+     }
+   }
   }
   .main-screen h1 {
     font-size: 34px;
