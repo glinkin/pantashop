@@ -35,6 +35,6 @@ set :rvm_ruby_version, '2.3.0'
 
 require 'capistrano/bundler'
 require 'capistrano/rails'
-
+require 'capistrano/ssh_doctor'
 
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }

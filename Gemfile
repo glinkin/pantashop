@@ -79,6 +79,7 @@ gem 'capistrano-rails', '~> 1.1', '>= 1.1.8'
 gem 'colorize', '0.7.4'
 gem 'sshkit', '~> 1.7', '>= 1.7.1'
 gem 'capistrano-rvm', github: "capistrano/rvm"
+gem 'capistrano-ssh-doctor', '~> 1.0'
 
 group :production do
   gem 'pg'
