@@ -28,6 +28,7 @@ class PhoneOrdersController < ApplicationController
 
     respond_to do |format|
       if @phone_order.save
+        OrderMailer.order_email(@phone_order).deliver_now
         format.html { redirect_to @phone_order, notice: 'Ваша заявка принята и поставлена в очередь на исполнение.' }
         format.json { render :show, status: :created, location: @phone_order }
       else

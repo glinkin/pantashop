@@ -473,7 +473,7 @@ body {
   padding-left: 20px;
   outline: none !important;
 }
-.feedback-form button {
+.feedback-form input[type=submit] {
   /* Rectangle 4: */
   background: #7ED321;
   border-radius: 4px;
@@ -822,6 +822,11 @@ body {
     margin: 0 auto;
     width: 162px;
     float: none;
+  }
+  .simple-page {
+    padding-top: 80px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
   .main-description{
     margin-top: 15px;

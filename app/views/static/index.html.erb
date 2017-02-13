@@ -296,10 +296,20 @@
     <div class="col-lg-12 main-warning-2">** Существуют противопоказания проконсультируйтесь у врача</div>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 feedback-form">
+    <%= form_for(@phone_order) do |f| %>
     <div class="col-lg-12 main-title"><h2>Хочу купить сейчас!</h2></div>
-    <div class="col-lg-12"><input type="text" placeholder="Ваше имя"></div>
-    <div class="col-lg-12"><input type="text" placeholder="Телефон"></div>
-    <div class="col-lg-12"><button>Заказать</button></div>
+    <div class="col-lg-12">
+      <%= f.text_field :name, :placeholder => 'Ваше имя' %>
+
+    </div>
+    <div class="col-lg-12">
+      <%= f.telephone_field :phone, :placeholder => 'Телефон' %>
+
+    </div>
+    <div class="col-lg-12">
+      <%= f.submit 'Заказать', :class => 'btn btn-lg btn-success' %>
+    </div>
+    <% end %>
     <div class="col-lg-12">
       Наш менеджер свяжется с Вами в течении 15-20 минут.
       Поможет оформить заказ и проконсультирует о товаре.
