@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use Fancybox-rails
 gem 'fancybox-rails'
+# Use Mail
+gem 'mail'
 
 # Use Animate-css
 gem 'animate.css-rails', '~> 3.2.0'

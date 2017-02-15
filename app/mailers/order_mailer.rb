@@ -1,4 +1,4 @@
-class OrderMailer < ApplicationMailer
+class OrderMailer < ActionMailer::Base
   default from: 'sale@pantashop.ru'
 
   def order_email(phone_order)
